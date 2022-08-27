@@ -1,0 +1,16 @@
+print("Введите время вылета по графику")
+print("Введите часы")
+viletplanchasi  = int(input())
+print("Введите минуты")
+viletplanminuti = int(input())
+print("Введите время задержки рейса")
+print("Введите часы задержки")
+viletplanchasiz  = int(input())
+print("Введите минуты задержки")
+viletplanminutiz = int(input())
+vilet_v_minutah_plan = (viletplanchasi*60)+viletplanminuti
+zaderzka_v_minutah = (viletplanchasiz*60)+viletplanminutiz
+faktvileta_chas = n = (vilet_v_minutah_plan + zaderzka_v_minutah)//60
+faktvileta_min = m =(vilet_v_minutah_plan + zaderzka_v_minutah)%60
+print ("Ваш рейс вылетает в:")
+print(n, m)
