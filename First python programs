@@ -14,3 +14,12 @@ faktvileta_chas = n = (vilet_v_minutah_plan + zaderzka_v_minutah)//60
 faktvileta_min = m =(vilet_v_minutah_plan + zaderzka_v_minutah)%60
 print ("Ваш рейс вылетает в:")
 print(n, m)
+------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+year = 2019
+
+if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
+    return True
+else:
+    return False
+
