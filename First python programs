@@ -74,6 +74,109 @@ elif z=="круг":
    print (s)
 ------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------
+Напишите программу, которая получает на вход три целых числа, по одному числу в строке, и выводит на консоль в три строки сначала максимальное, потом минимальное, после чего оставшееся число.
+На ввод могут подаваться и повторяющиеся числа.
+
+a,b,c=int(input()),int(input()),int(input())
+maxim=a
+minim=b
+if b>a:
+    maxim=b
+    minim=a
+if c>maxim:
+    maxim=c
+if c<minim:
+    minim=c
+ost=a+b+c-minim-maxim
+print(maxim)
+print(minim)
+print(ost)
+
+a,b,c = int(input()), int(input()), int(input())
+
+if a < b:
+	a, b = b, a
+if a < c:
+	a, c = c, a
+if b > c:
+	b, c = c, b
+print(a)
+print(b)
+print(c)
+
+a=int(input())
+b=int(input())
+c=int(input())
+if c<a<b:
+   print(b)
+   print(c)
+   print(a) 
+if b<c<a:
+   print(a)
+   print(b)
+   print(c)
+if a<b<c:
+   print(c)
+   print(a)
+   print(b)  
+if a<c<b:
+   print(b)
+   print(a)
+   print(c)
+if b<a<c:
+   print(c)
+   print(b)
+   print(a)
+if c<b<a:
+   print(a)
+   print(c)
+   print(b)
+if a==b<c:
+   print(c)
+   print(b)
+   print(a)
+if a==b==c:
+   print(a)
+   print(b)
+   print(c)
+if c==b<a:
+   print(a)
+   print(b)
+   print(c)
+if c==a<b:
+   print(b)
+   print(a)
+   print(c)
+if c<a==b:
+   print(b)
+   print(c)
+   print(a)
+if b<a==c:
+   print(c)
+   print(b)
+   print(a)
+if a<c==b:
+   print(b)
+   print(a)
+   print(c)
+   
+   
+   a, b, c = int(input()), int(input()), int(input())
+
+max = a
+min = a
+if b > max: max = b
+if c > max: max = c
+if b < min: min = b
+if c < min: min = c
+
+mid = (a+b+c)-(max+min)
+
+print(str(max)+'\n'+str(min)+'\n'+str(mid))
+
+------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+
 Напишите программу, считывающую с пользовательского ввода целое число nn (неотрицательное),
 выводящее это число в консоль вместе с правильным образом изменённым словом "программист", для того, чтобы робот мог нормально общаться с людьми, 
 например: 1 программист, 2 программиста, 5 программистов.
